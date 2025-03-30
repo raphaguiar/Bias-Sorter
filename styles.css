@@ -28,6 +28,16 @@ body {
   max-height: 90vh; 
 }
 
+::selection {
+  background: #fad2cb; 
+  color: #4a4a4a; 
+}
+
+::-moz-selection {
+  background: #fad2cb;
+  color: #4a4a4a;
+}
+
 button {
   font-family: 'Hammersmith One', Arial, Helvetica, sans-serif;
   cursor: url(cursor.png), auto;
