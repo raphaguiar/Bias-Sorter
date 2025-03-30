@@ -7,6 +7,7 @@ const bonedo = ["Jaehyun", "Sungho", "Riwoo", "Taesan", "Leehan", "Woonhak"];
 const exo = ["Xiumin", "Suho", "Baekhyun", "Chen", "Chanyeol", "D.O", "Kai", "Sehun"];
 const ateez = ["Hongjoong", "Seonghwa", "Mingi", "Wooyoung", "San", "Yeosang", "Yunho", "Jongho"];
 const p1h = ["Keeho", "Intak", "Soul", "Jongseob", "Theo", "Jiung"];
+const tbz = ["Sangyeon", "Jacob", "Younghoon", "Hyunjae", "Juyeon", "Kevin", "New", "Q", "Haknyeon", "Sunwoo", "Eric"];
 
 
 function selectGroup(group) {
@@ -26,6 +27,8 @@ function selectGroup(group) {
         members = [...ateez];
     } else if (group === 'p1h') {
         members = [...p1h];
+    } else if (group === 'tbz') {
+        members = [...tbz];
     }
     
     document.querySelector('.group-selection').style.display = 'none'; 
