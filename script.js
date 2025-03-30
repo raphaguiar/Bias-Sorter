@@ -5,6 +5,9 @@ const got7 = ["JB", "Mark", "Jackson", "Jinyoung", "Youngjae", "Bambam", "Yugyeo
 const enhypen = ["Jungwon", "Heeseung", "Jay", "Jake", "Sunghoon", "Sunoo", "Ni-ki"];
 const bonedo = ["Jaehyun", "Sungho", "Riwoo", "Taesan", "Leehan", "Woonhak"];
 const exo = ["Xiumin", "Suho", "Baekhyun", "Chen", "Chanyeol", "D.O", "Kai", "Sehun"];
+const ateez = ["Hongjoong", "Seonghwa", "Mingi", "Wooyoung", "San", "Yeosang", "Yunho", "Jongho"];
+const p1h = ["Keeho", "Intak", "Soul", "Jongseob", "Theo", "Jiung"];
+
 
 function selectGroup(group) {
     document.querySelector('p').style.display = 'none';
@@ -19,6 +22,10 @@ function selectGroup(group) {
         members = [...bonedo];
     } else if (group === 'exo') {
         members = [...exo];
+    } else if (group === 'ateez') {
+        members = [...ateez];
+    } else if (group === 'p1h') {
+        members = [...p1h];
     }
     
     document.querySelector('.group-selection').style.display = 'none'; 
