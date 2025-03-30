@@ -7,6 +7,7 @@
 body {
   font-family: 'Hammersmith One', Arial, Helvetica, sans-serif;
   text-align: center;
+  cursor: url(cursor.png), auto;
   margin: 0;
   height: 100vh;
   display: flex;
@@ -28,7 +29,8 @@ body {
 }
 
 button {
-      font-family: 'Hammersmith One', Arial, Helvetica, sans-serif;
+  font-family: 'Hammersmith One', Arial, Helvetica, sans-serif;
+  cursor: url(cursor.png), auto;
 }
 
 h1 {
@@ -45,9 +47,9 @@ p {
   background-color: #fae2db;
   border: 2px solid #fad2cb;
   border-radius: 10px;
-  cursor: pointer;
   margin: 10px;
   transition: background-color 0.3s, transform 0.3s;
+  cursor: url(cursor.png), auto;
 }
 
 .group-selection button:hover {
@@ -68,7 +70,6 @@ p {
   background-color: #fae2db;
   border: 2px solid #fad2cb;
   border-radius: 10px;
-  cursor: pointer;
   transition: background-color 0.3s, transform 0.3s;
 }
 
@@ -82,7 +83,6 @@ p {
   background-color: #ffecb3;
   border: 2px solid #ffe082;
   border-radius: 10px;
-  cursor: pointer;
   transition: background-color 0.3s;
 }
 
