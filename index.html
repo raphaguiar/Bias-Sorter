@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZB1 Sorter</title>
+    <link rel="icon" href="FAVICON.webp" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ZB1 Sorter</h1>
+        <p>Escolha qual membro você prefere em cada confronto para gerar um ranking preciso!</p>
+        <p>Nota: selecionar 'Sem preferência' com frequência pode afetar os resultados.</p>
+        <div class="battle">
+            <div class="member" id="member1"></div>
+            <div class="options">
+                <button onclick="choose('no_opinion')">Sem preferência</button>
+            </div>
+            <div class="member" id="member2"></div>
+        </div>
+        <div class="ranking-container">
+          <h2>Seu Ranking</h2>
+          <ol id="finalRanking"></ol>
+      </div>
+        <p id="progress">Confronto #1 - 0% concluído.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
