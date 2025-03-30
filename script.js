@@ -1,7 +1,7 @@
 let members = [];
 
 const zb1 = ["Hanbin", "Zhang Hao", "Jiwoong", "Matthew", "Taerae", "Ricky", "Gyuvin", "Gunwook", "Yujin"];
-const got7 = ["JB", "Mark", "Jackson", "Jinyoung", "Youngjae", "BamBbm", "Yugyeom"];
+const got7 = ["JB", "Mark", "Jackson", "Jinyoung", "Youngjae", "Bambam", "Yugyeom"];
 const enhypen = ["Jungwon", "Heeseung", "Jay", "Jake", "Sunghoon", "Sunoo", "Ni-ki"];
 const bonedo = ["Jaehyun", "Sungho", "Riwoo", "Taesan", "Leehan", "Woonhak"];
 const exo = ["Xiumin", "Suho", "Baekhyun", "Chen", "Chanyeol", "D.O", "Kai", "Sehun"];
