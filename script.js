@@ -1,6 +1,33 @@
-const members = ["Hanbin", "Zhang Hao", "Jiwoong", "Matthew",
-    "Taerae", "Ricky", "Gyuvin", "Gunwook", "Yujin"
-];
+let members = [];
+
+const zb1 = ["Hanbin", "Zhang Hao", "Jiwoong", "Matthew", "Taerae", "Ricky", "Gyuvin", "Gunwook", "Yujin"];
+const got7 = ["JB", "Mark", "Jackson", "Jinyoung", "Youngjae", "BamBbm", "Yugyeom"];
+const enhypen = ["Jungwon", "Heeseung", "Jay", "Jake", "Sunghoon", "Sunoo", "Ni-ki"];
+
+function selectGroup(group) {
+    document.querySelector('p').style.display = 'none';
+
+    if (group === 'zb1') {
+        members = [...zb1];
+    } else if (group === 'got7') {
+        members = [...got7];
+    } else if (group === 'enhypen') {
+        members = [...enhypen];
+    }
+    
+    document.querySelector('.group-selection').style.display = 'none'; 
+    document.getElementById('battleSection').style.display = 'block'; 
+
+    shuffledMembers = shuffleArray([...members]);
+    battles = generateBattles(shuffledMembers);
+    results = members.reduce((acc, member) => {
+        acc[member] = 0;
+        return acc;
+    }, {});
+
+    currentBattle = 0;
+    updateBattle();
+}
 
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
@@ -19,16 +46,6 @@ function generateBattles(members) {
     }
     return shuffleArray(battles);
 }
-
-const shuffledMembers = shuffleArray([...members]);
-const battles = generateBattles(shuffledMembers);
-
-const results = members.reduce((acc, member) => {
-    acc[member] = 0;
-    return acc;
-}, {});
-
-let currentBattle = 0;
 
 function updateBattle() {
     if (currentBattle < battles.length) {
@@ -55,11 +72,20 @@ function choose(choice) {
     updateBattle();
 }
 
+function resetGame() {
+    document.getElementById('ranking-screen').style.display = 'none';
+
+    document.getElementById('group-selection').style.display = 'block';
+    document.getElementById('intro-text').style.display = 'block';
+
+    document.getElementById('finalRanking').innerHTML = '';
+    document.getElementById('progress').innerText = 'Confronto #1 - 0% concluído.';
+    currentBattle = 0;
+}
+
 function showResults() {
   const sortedResults = Object.entries(results).sort((a, b) => b[1] - a[1]);
   const rankingContainer = document.getElementById('finalRanking');
   rankingContainer.innerHTML = sortedResults.map(entry => `<li>${entry[0]}</li>`).join('');
   document.getElementById('progress').innerText = 'Ranking Completo!';
 }
-
-updateBattle();
