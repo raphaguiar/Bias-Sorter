@@ -8,6 +8,7 @@ const exo = ["Xiumin", "Suho", "Baekhyun", "Chen", "Chanyeol", "D.O", "Kai", "Se
 const ateez = ["Hongjoong", "Seonghwa", "Mingi", "Wooyoung", "San", "Yeosang", "Yunho", "Jongho"];
 const p1h = ["Keeho", "Intak", "Soul", "Jongseob", "Theo", "Jiung"];
 const tbz = ["Sangyeon", "Jacob", "Younghoon", "Hyunjae", "Juyeon", "Kevin", "New", "Q", "Haknyeon", "Sunwoo", "Eric"];
+const andteam = ["K", "Fuma", "Nicholas", "EJ", "Yuma", "Jo", "Harua", "Taki", "Maki"];
 
 
 function selectGroup(group) {
@@ -29,6 +30,8 @@ function selectGroup(group) {
         members = [...p1h];
     } else if (group === 'tbz') {
         members = [...tbz];
+    } else if (group === 'andteam') {
+        members = [...andteam];
     }
     
     document.querySelector('.group-selection').style.display = 'none'; 
