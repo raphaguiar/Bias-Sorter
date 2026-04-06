@@ -33,8 +33,7 @@ function selectGroup(group) {
         members = [...tbz];
     } else if (group === 'andteam') {
         members = [...andteam];
-    }
-    else if (group === 'cortis') {
+    }  else if (group === 'cortis') {
         members = [...cortis];
     }
     
