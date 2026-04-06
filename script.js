@@ -9,6 +9,7 @@ const ateez = ["Hongjoong", "Seonghwa", "Mingi", "Wooyoung", "San", "Yeosang", "
 const p1h = ["Keeho", "Intak", "Soul", "Jongseob", "Theo", "Jiung"];
 const tbz = ["Sangyeon", "Jacob", "Younghoon", "Hyunjae", "Juyeon", "Kevin", "New", "Q", "Haknyeon", "Sunwoo", "Eric"];
 const andteam = ["K", "Fuma", "Nicholas", "EJ", "Yuma", "Jo", "Harua", "Taki", "Maki"];
+const cortis = ["James", "Juhoon", "Martin", "Seonghyeon", "Keonho"];
 
 
 function selectGroup(group) {
@@ -32,6 +33,9 @@ function selectGroup(group) {
         members = [...tbz];
     } else if (group === 'andteam') {
         members = [...andteam];
+    }
+    else if (group === 'cortis') {
+        members = [...cortis];
     }
     
     document.querySelector('.group-selection').style.display = 'none'; 
