@@ -7,7 +7,7 @@ const bonedo = ["Jaehyun", "Sungho", "Riwoo", "Taesan", "Leehan", "Woonhak"];
 const exo = ["Xiumin", "Suho", "Baekhyun", "Chen", "Chanyeol", "D.O", "Kai", "Sehun"];
 const ateez = ["Hongjoong", "Seonghwa", "Mingi", "Wooyoung", "San", "Yeosang", "Yunho", "Jongho"];
 const p1h = ["Keeho", "Intak", "Soul", "Jongseob", "Theo", "Jiung"];
-const tbz = ["Sangyeon", "Jacob", "Younghoon", "Hyunjae", "Juyeon", "Kevin", "New", "Q", "Haknyeon", "Sunwoo", "Eric"];
+const riize = ["Shotaro", "Eunseok", "Sungchan", "Wonbin", "Sohee", "Anton"];
 const andteam = ["K", "Fuma", "Nicholas", "EJ", "Yuma", "Jo", "Harua", "Taki", "Maki"];
 const cortis = ["James", "Juhoon", "Martin", "Seonghyeon", "Keonho"];
 
