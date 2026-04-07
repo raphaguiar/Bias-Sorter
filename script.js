@@ -29,8 +29,8 @@ function selectGroup(group) {
         members = [...ateez];
     } else if (group === 'p1h') {
         members = [...p1h];
-    } else if (group === 'tbz') {
-        members = [...tbz];
+    } else if (group === 'riize') {
+        members = [...riize];
     } else if (group === 'andteam') {
         members = [...andteam];
     }  else if (group === 'cortis') {
